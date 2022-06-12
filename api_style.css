@@ -1,0 +1,65 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Verdana, sans-serif; /* font family */
+    font-size: 11pt; /* size of the main font in points */
+    color: #333; /* color of main text */
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.app {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column
+}
+
+.header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 24pt;
+    font-family: Georgia, Times, serif;
+    font-weight: normal; /* normal text font */
+}
+
+.header select {
+    font-size: 1rem;
+}
+
+a {
+    color: sienna;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+.slideshow {
+    flex: 1;
+    background-color: #333;
+    position: relative;
+    overflow: hidden
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    opacity: 0;
+    transform: scale(1);
+    transition: all .9s ease-out;
+}
+
+.slide:nth-last-child(2) {
+    opacity: 1;
+    transform: scale(1.08);
+}
