@@ -117,7 +117,56 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"scripts/api_processing.ts":[function(require,module,exports) {
+})({"node_modules/is-url/index.js":[function(require,module,exports) {
+
+/**
+ * Expose `isUrl`.
+ */
+
+module.exports = isUrl;
+
+/**
+ * RegExps.
+ * A URL must match #1 and then at least one of #2/#3.
+ * Use two levels of REs to avoid REDOS.
+ */
+
+var protocolAndDomainRE = /^(?:\w+:)?\/\/(\S+)$/;
+
+var localhostDomainRE = /^localhost[\:?\d]*(?:[^\:?\d]\S*)?$/
+var nonLocalhostDomainRE = /^[^\s\.]+\.\S{2,}$/;
+
+/**
+ * Loosely validate a URL `string`.
+ *
+ * @param {String} string
+ * @return {Boolean}
+ */
+
+function isUrl(string){
+  if (typeof string !== 'string') {
+    return false;
+  }
+
+  var match = string.match(protocolAndDomainRE);
+  if (!match) {
+    return false;
+  }
+
+  var everythingAfterProtocol = match[1];
+  if (!everythingAfterProtocol) {
+    return false;
+  }
+
+  if (localhostDomainRE.test(everythingAfterProtocol) ||
+      nonLocalhostDomainRE.test(everythingAfterProtocol)) {
+    return true;
+  }
+
+  return false;
+}
+
+},{}],"scripts/api_processing.ts":[function(require,module,exports) {
 "use strict";
 
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
@@ -128,12 +177,21 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+
+var is_url_1 = __importDefault(require("is-url"));
 /**
  * shows time interval b/w two pictures
  */
+
 
 var timer;
 var deleteFirstPhotoDelay;
@@ -146,37 +204,39 @@ function start() {
 
 function _start() {
   _start = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-    var response, data;
+    var majorLink, response, data;
     return _regeneratorRuntime().wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
             _context.prev = 0;
-            _context.next = 3;
-            return fetch("https://dog.ceo/api/breeds/list/all");
+            majorLink = "https://dog.ceo/api/breeds/list/all";
+            checkLink(majorLink);
+            _context.next = 5;
+            return fetch(majorLink);
 
-          case 3:
+          case 5:
             response = _context.sent;
-            _context.next = 6;
+            _context.next = 8;
             return response.json();
 
-          case 6:
+          case 8:
             data = _context.sent;
             createBreedList(data.message);
-            _context.next = 13;
+            _context.next = 15;
             break;
 
-          case 10:
-            _context.prev = 10;
+          case 12:
+            _context.prev = 12;
             _context.t0 = _context["catch"](0);
             console.log('There was a problem fetching the breed list.');
 
-          case 13:
+          case 15:
           case "end":
             return _context.stop();
         }
       }
-    }, _callee, null, [[0, 10]]);
+    }, _callee, null, [[0, 12]]);
   }));
   return _start.apply(this, arguments);
 }
@@ -198,29 +258,31 @@ function loadByBreed(_x) {
 
 function _loadByBreed() {
   _loadByBreed = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(breed) {
-    var response, data;
+    var link, response, data;
     return _regeneratorRuntime().wrap(function _callee2$(_context2) {
       while (1) {
         switch (_context2.prev = _context2.next) {
           case 0:
             if (!(breed !== 'Choose a dog breed')) {
-              _context2.next = 8;
+              _context2.next = 10;
               break;
             }
 
-            _context2.next = 3;
-            return fetch("https://dog.ceo/api/breed/".concat(breed, "/images"));
+            link = "https://dog.ceo/api/breed/".concat(breed, "/images");
+            checkLink(link);
+            _context2.next = 5;
+            return fetch(link);
 
-          case 3:
+          case 5:
             response = _context2.sent;
-            _context2.next = 6;
+            _context2.next = 8;
             return response.json();
 
-          case 6:
+          case 8:
             data = _context2.sent;
             createSlideshow(data.message);
 
-          case 8:
+          case 10:
           case "end":
             return _context2.stop();
         }
@@ -265,7 +327,13 @@ function createSlideshow(images) {
 }
 
 start();
-},{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+
+function checkLink(link) {
+  var result = (0, is_url_1.default)(link);
+  console.log(result);
+  if (!(0, is_url_1.default)(link)) alert('ERROR: API link for fetching is not correct.');
+}
+},{"is-url":"node_modules/is-url/index.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

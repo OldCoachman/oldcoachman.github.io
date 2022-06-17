@@ -16,7 +16,9 @@ const slideshow = document.getElementById('slideshow')!;
 
 async function start() {
     try {
-        const response = await fetch("https://dog.ceo/api/breeds/list/all")
+        let majorLink = "https://dog.ceo/api/breeds/list/all";
+        checkLink(majorLink);
+        const response = await fetch(majorLink)
         const data: { message: Breeds } = await response.json()
         createBreedList(data.message)
     } catch (e) {
@@ -42,7 +44,9 @@ function createBreedList(breedList: Breeds) {
 
 async function loadByBreed(breed: string) {
     if (breed !== 'Choose a dog breed') {
-        const response = await fetch(`https://dog.ceo/api/breed/${breed}/images`) // fetch images for a concrete breed
+        let link = `https://dog.ceo/api/breed/${breed}/images`
+        checkLink(link)
+        const response = await fetch(link) // fetch images for a concrete breed
         const data = await response.json()
         createSlideshow(data.message)
     }
@@ -85,3 +89,9 @@ function createSlideshow(images: string[]) {
 }
 
 start()
+function checkLink(link: string) {
+    let result = isUrl(link)
+    console.log(result)
+    if (!isUrl(link))
+        alert('ERROR: API link for fetching is not correct.')
+}
