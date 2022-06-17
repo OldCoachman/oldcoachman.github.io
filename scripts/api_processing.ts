@@ -33,8 +33,8 @@ function createBreedList(breedList: Breeds) {
     select.innerHTML = `
         <option>Choose a dog breed</option>
         ${Object.keys(breedList).map(breed => {
-            return `<option>${breed}</option>`
-        }).join('')}
+        return `<option>${breed}</option>`
+    }).join('')}
     `
 
     breed.append(select)
