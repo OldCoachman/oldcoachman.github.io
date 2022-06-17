@@ -1,0 +1,10 @@
+{
+  "include": ["scripts"], // список папок со скриптами для компилятора
+  "compilerOptions": {
+    "lib": ["ES2017", "DOM"],
+    "target": "ES2017",
+    "moduleResolution": "node",
+    "strict": true,
+    "allowSyntheticDefaultImports": true
+  }
+}

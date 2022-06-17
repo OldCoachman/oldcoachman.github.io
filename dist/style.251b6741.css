@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, Verdana, sans-serif; /* font family */
+    font-size: 11pt; /* size of the main font in points */
+    color: #333; /* color of main text */
+}
+
+h1 {
+    font-size: 24pt;
+    font-family: Georgia, Times, serif;
+    font-weight: normal; /* normal text font */
+}
+
+h2 {
+    color: darkolivegreen;
+}
+
+p {
+    text-align: justify;
+    margin-left:10px;
+    border-left: 1px solid #999;
+    border-bottom: 1px solid #999;
+    padding-left: 10px;
+    pading_bottom: 10px;
+}
+
+a {
+    color: sienna;
+}
+
+/*# sourceMappingURL=/style.251b6741.css.map */

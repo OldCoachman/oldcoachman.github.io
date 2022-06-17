@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@types/is-url": "^1.2.30",
+    "is-url": "^1.2.4",
+    "parcel-bundler": "^1.12.5"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.3"
+  },
+  "scripts": {
+    "start": "npx parcel index.html views/*.html",
+    "build": "npx parcel build index.html views/*.html"
+  }
+}
