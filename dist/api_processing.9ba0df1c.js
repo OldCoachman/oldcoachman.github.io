@@ -331,7 +331,7 @@ start();
 function checkLink(link) {
   var result = (0, is_url_1.default)(link);
   console.log(result);
-  if (!(0, is_url_1.default)(link)) alert('ERROR: API link for fetching is not correct.');
+  if (!(0, is_url_1.default)(link)) alert('ERROR: API fetching link is not correct.');
 }
 },{"is-url":"node_modules/is-url/index.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];

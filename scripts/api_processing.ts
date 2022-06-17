@@ -93,5 +93,5 @@ function checkLink(link: string) {
     let result = isUrl(link)
     console.log(result)
     if (!isUrl(link))
-        alert('ERROR: API link for fetching is not correct.')
+        alert('ERROR: API fetching link is not correct.')
 }
