@@ -1,4 +1,4 @@
 To run this app:
 - write "npm ci" in terminal, if necessary
 - click "run"
-- open "index.html"
+- open "index.html" in "public" folder
