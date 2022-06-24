@@ -1,7 +1,7 @@
 import isUrl from "is-url"
 
 interface Breeds {
-    [breed: string]: unknown
+    [breed: string]: string[]
 }
 
 /**
