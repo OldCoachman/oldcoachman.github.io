@@ -1,4 +1,1 @@
-To run this app:
-- write "npm ci" in terminal, if necessary
-- click "run"
-- open "index.html" in "public" folder
+Now, api_page uses npm library. So, you should type "npm start" in the terminal to see this usage.
