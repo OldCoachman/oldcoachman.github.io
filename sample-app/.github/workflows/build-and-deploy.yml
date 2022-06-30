@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - master
-      
+
 jobs:
   build-and-deploy:
     name: Build and deploy to GitHub Pages

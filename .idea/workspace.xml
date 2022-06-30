@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8a4de85-7e86-4cc0-aca0-ec227d59a9c7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/sample-app/.github/workflows/build-and-deploy.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Portfolio. A5. SvelteKit.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample-app/.github/workflows/build-and-deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sample-app/.github/workflows/build-and-deploy.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +32,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Codes\Front end\GitHub\oldcoachman.github.io" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Codes\Front end\GitHub\oldcoachman.github.io" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -44,7 +44,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1656603870787</updated>
-      <workItem from="1656603872417" duration="872000" />
+      <workItem from="1656603872417" duration="1396000" />
+      <workItem from="1656612214514" duration="195000" />
     </task>
     <servers />
   </component>
@@ -61,5 +62,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
