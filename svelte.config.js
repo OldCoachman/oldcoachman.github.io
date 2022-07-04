@@ -7,16 +7,12 @@ const config = {
 	// for more information about preprocessors
 	preprocess: preprocess(),
 
-	kit: {
-		adapter: adapter(),
+	prerender: {
+		default: true,
+	},
 
-		// Override http methods in the Todo forms
-		methodOverride: {
-			allowed: ['PATCH', 'DELETE']
-		},
-		prerender: {
-			default: true,
-		}
+	kit: {
+		adapter: adapter()
 	}
 };
 
