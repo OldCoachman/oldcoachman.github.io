@@ -1,47 +1,61 @@
-<svelte:head>
-	<script>
-		import '$lib/styles/general_style.css'
-	</script>
+<script context="module" lang="ts">
+	export const prerender = true;
+</script>
 
-	<title>Ivan's Site</title>
-	<link rel="stylesheet" href="src/lib/styles/general_style.css">
+<script lang="ts">
+	import Counter from '$lib/Counter.svelte';
+</script>
+
+<svelte:head>
+	<title>Home</title>
+	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<h1>Kornienko Ivan</h1>
-<a><img src="BATMAN.png" width="200" alt="(Profile photo)"></a>
-<hr class="underPicture">
-<hr class="aboveNav">
-<nav>
-	<a href="/02._About_me">About me</a>
-	<a href="/03._Projects">My GitHub projects</a>
-	<a href="04._Contact_me">Contact Me</a>
-	<a href="05._Api_page">See API example</a>
-</nav>
-<hr class="belowNav">
+<section>
+	<h1>
+		<span class="welcome">
+			<picture>
+				<source srcset="svelte-welcome.webp" type="image/webp" />
+				<img src="svelte-welcome.png" alt="Welcome" />
+			</picture>
+		</span>
+
+		to your new<br />SvelteKit app
+	</h1>
+
+	<h2>
+		try editing <strong>src/routes/index.svelte</strong>
+	</h2>
+
+	<Counter />
+</section>
 
 <style>
-	.underPicture {
-		border-color: black;
-		width: 200px
+	section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex: 1;
 	}
-	.aboveNav {
-		margin-left:5px;
-		margin-right:5px;
-		margin-top: 10px
+
+	h1 {
+		width: 100%;
 	}
-	.belowNav {
-		margin-left:5px;
-		margin-right:5px;
-		margin-top: 20px
+
+	.welcome {
+		display: block;
+		position: relative;
+		width: 100%;
+		height: 0;
+		padding: 0 0 calc(100% * 495 / 2048) 0;
 	}
-	a {
-		margin: 20px;
-	}
-	hr {
-		margin-left: 30px;
-		margin-top: -4px;
-	}
-	nav {
-		margin-top: 20px;
+
+	.welcome img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		display: block;
 	}
 </style>
