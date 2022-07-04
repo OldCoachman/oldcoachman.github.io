@@ -12,10 +12,6 @@ const config = {
 			pages: "docs",
 			assets: "docs"
 		}),
-		paths: {
-			// change below to your repo name
-			base: dev ? "" : "/oldcoachman.github.io",
-		},
 		// Override http methods in the Todo forms
 		methodOverride: {
 			allowed: ['PATCH', 'DELETE']
