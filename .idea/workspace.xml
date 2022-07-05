@@ -2,57 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3300a8cb-ae55-46f3-b18b-12280b636883" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/BATMAN.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/api_processing.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/styles/api_style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/styles/general_style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/02._About_me.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/03._Projects.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/04._Contact_me.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/05._Api_page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_app/immutable/assets/fira-mono-all-400-normal-1e3b098c.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_app/immutable/assets/fira-mono-cyrillic-400-normal-c7d433fd.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_app/immutable/assets/fira-mono-cyrillic-ext-400-normal-3df7909e.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_app/immutable/assets/fira-mono-greek-400-normal-a8be01ce.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_app/immutable/assets/fira-mono-greek-ext-400-normal-9e2fe623.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_app/immutable/assets/fira-mono-latin-400-normal-e43b3538.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_app/immutable/assets/fira-mono-latin-ext-400-normal-6bfabd30.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_app/immutable/assets/pages/__layout.svelte-da7c5ce3.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_app/immutable/assets/pages/about.svelte-bf4528fa.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_app/immutable/assets/pages/index.svelte-e12bfb09.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_app/immutable/assets/pages/todos/index.svelte-a910a02d.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_app/immutable/assets/svelte-logo-87df40b8.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_app/immutable/chunks/index-92d65ea7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_app/immutable/chunks/index-9fe72fd8.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_app/immutable/chunks/singletons-d1fb5791.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_app/immutable/error.svelte-42240586.js" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_app/immutable/assets/pages/__layout.svelte-91a1db33.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_app/immutable/assets/pages/index.svelte-3ac0506a.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_app/immutable/pages/__layout.svelte-703fa3ce.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_app/immutable/pages/index.svelte-b4c27205.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_app/immutable/start-829ee881.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_app/immutable/assets/pages/index.svelte-c18686f5.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_app/immutable/chunks/index-22e9cf07.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_app/immutable/chunks/index-d9f375e3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_app/immutable/error.svelte-6f67bee1.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_app/immutable/error.svelte-6f3bf6b8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_app/immutable/layout.svelte-fce4d122.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/_app/immutable/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_app/immutable/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_app/immutable/pages/__layout.svelte-7d7bba67.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_app/immutable/pages/about.svelte-2ed05136.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_app/immutable/pages/index.svelte-3f95c717.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_app/immutable/pages/todos/index.svelte-f70ccef8.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_app/immutable/start-d2e8e456.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_app/immutable/pages/02._About_me.svelte-9e6147f8.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_app/immutable/pages/02._About_me.svelte-14d1011c.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_app/immutable/pages/03._Projects.svelte-46a30fe5.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_app/immutable/pages/03._Projects.svelte-0f92dafc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_app/immutable/pages/04._Contact_me.svelte-641dd406.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_app/immutable/pages/04._Contact_me.svelte-cc423b73.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_app/immutable/pages/05._Api_page.svelte-57aa02fb.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_app/immutable/pages/05._Api_page.svelte-4465657b.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_app/immutable/pages/index.svelte-51b7a888.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_app/immutable/start-ab672366.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/_app/version.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_app/version.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/favicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/Counter.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/form.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/header/Header.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/header/svelte-logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/__layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/__layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/about.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/todos/_api.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/todos/index.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/todos/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/favicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svelte.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/svelte.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1656962912053</updated>
       <workItem from="1656962914068" duration="2398000" />
-      <workItem from="1657013107694" duration="2109000" />
+      <workItem from="1657013107694" duration="2310000" />
     </task>
     <servers />
   </component>
