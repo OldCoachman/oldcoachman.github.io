@@ -11,7 +11,12 @@ const config = {
 		adapter: adapter({
 			pages: "docs",
 			assets: "docs"
-		})
+		}),
+		paths: {
+			// change below to your repo name
+			base: dev ? "" : "/oldcoachman.github.io",
+		},
+		target: "#svelte"
 		// prerender: {
 		// 	default: true,
 		// },
