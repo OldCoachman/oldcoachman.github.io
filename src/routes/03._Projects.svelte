@@ -1,8 +1,4 @@
 <svelte:head>
-    <script>
-        import '$lib/styles/general_style.css'
-    </script>
-
     <title>Projects</title>
     <link rel="stylesheet" href="src/lib/styles/general_style.css">
 </svelte:head>
