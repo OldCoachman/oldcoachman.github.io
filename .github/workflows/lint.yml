@@ -1,12 +1,11 @@
-name: Build, lint, and deploy to GitHub Pages
+name: Lint
 
 on:
   push:
-    branches: [main]
 
 jobs:
   build:
-    name: Build and deploy
+    name: Lint
     runs-on: ubuntu-latest
     steps:
       - name: Clone git repository
@@ -19,9 +18,3 @@ jobs:
         run: npm ci
       - name: Lint
         run: npm run lint
-      - name: Build
-        run: npm run build
-      - name: Deploy to pages
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: 'build'
