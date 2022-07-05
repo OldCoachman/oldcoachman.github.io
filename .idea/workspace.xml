@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3300a8cb-ae55-46f3-b18b-12280b636883" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/02._About_me.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/02._About_me.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/03._Projects.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/03._Projects.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/04._Contact_me.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/04._Contact_me.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/svelte-welcome.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/svelte-welcome.webp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +57,7 @@
       <workItem from="1657013107694" duration="2310000" />
       <workItem from="1657015452504" duration="337000" />
       <workItem from="1657016420534" duration="411000" />
-      <workItem from="1657025240575" duration="347000" />
+      <workItem from="1657025240575" duration="758000" />
     </task>
     <servers />
   </component>
