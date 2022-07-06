@@ -10,18 +10,21 @@
     <title>API images</title>
 </svelte:head>
 
-<nav><a href="/">To the main page</a></nav>
-<hr class="upper">
-<div class="app">
-    <div class="header">
-        <h2>Dog photos</h2>
-        <div id="breed"></div>
+<main>
+    <nav><a href="/">To the main page</a></nav>
+    <hr class="upper">
+    <div class="app">
+        <div class="header">
+            <h2>Dog photos</h2>
+            <div id="breed"></div>
+        </div>
+        <hr class="lower">
+        <div class="slideshow" id="slideshow">
+            <div class="slide"></div>
+        </div>
     </div>
-    <hr class="lower">
-    <div class="slideshow" id="slideshow">
-        <div class="slide" style="background-image: url('https://images.dog.ceo/breeds/chihuahua/n02085620_11258.jpg')"></div>
-    </div>
-</div>
+
+</main>
 
 <style>
     .upper {
