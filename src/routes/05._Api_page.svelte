@@ -1,6 +1,6 @@
 <script lang="ts">
-	import '$lib/styles/api_style.css';
-	import '../lib/styles/general_style.css';
+	import '/static/styles/api_style.css';
+	import '/static/styles/general_style.css';
 	import { startApiProcessing } from '../lib/api_processing';
 	import { onMount } from 'svelte/internal';
 	onMount(startApiProcessing);

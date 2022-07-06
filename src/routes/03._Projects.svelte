@@ -1,6 +1,6 @@
 <svelte:head>
 	<title>Projects</title>
-	<link rel="stylesheet" href="src/lib/styles/general_style.css" />
+	<link rel="stylesheet" href="/styles/general_style.css" />
 </svelte:head>
 
 <main>
