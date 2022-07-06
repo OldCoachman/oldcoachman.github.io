@@ -1,9 +1,9 @@
 <svelte:head>
 	<title>Ivan's Site</title>
-	<link rel="stylesheet" href="/styles/general_style.css />
+	<link rel="stylesheet" href="/styles/general_style.css" />
 </svelte:head>
 
-
+<main>
 	<h1>Kornienko Ivan</h1>
 	<img src="BATMAN.png" width="200" alt="(Profile)" />
 	<hr class="underPicture" />
@@ -15,7 +15,7 @@
 		<a href="./05._Api_page">See API example</a>
 	</nav>
 	<hr class="belowNav" />
-
+</main>
 
 <style>
 	.underPicture {
