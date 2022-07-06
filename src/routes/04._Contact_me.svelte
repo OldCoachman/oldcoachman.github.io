@@ -1,6 +1,5 @@
 <svelte:head>
 	<title>Contacts</title>
-	<link rel="stylesheet" href="/styles/general_style.css" />
 </svelte:head>
 
 <main>
@@ -23,3 +22,24 @@
 		</li>
 	</ol>
 </main>
+
+<style>
+	h2 {
+		color: darkolivegreen;
+		font-family: Arial, Verdana, sans-serif;
+		margin-left: 10px;
+	}
+
+	ol,
+	li {
+		font-family: Arial, Verdana, sans-serif; /* font family */
+		font-size: 11pt; /* size of the main font in points */
+		color: #333; /* color of main text */
+	}
+
+	a {
+		color: sienna;
+		font-family: Arial, Verdana, sans-serif; /* font family */
+		font-size: 11pt; /* size of the main font in points */
+	}
+</style>

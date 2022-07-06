@@ -1,6 +1,5 @@
 <svelte:head>
 	<title>Ivan's Site</title>
-	<link rel="stylesheet" href="/styles/general_style.css" />
 </svelte:head>
 
 <main>
@@ -23,27 +22,44 @@
 		width: 200px;
 		background-color: black;
 	}
+
+	hr {
+		margin-left: 30px;
+		margin-top: -4px;
+	}
+
 	.aboveNav {
 		margin-left: 5px;
 		margin-right: 5px;
 		margin-top: 10px;
 	}
+
 	.belowNav {
 		margin-left: 5px;
 		margin-right: 5px;
 		margin-top: 20px;
 	}
+
 	a {
 		margin: 20px;
+		color: sienna;
+		font-family: Arial, Verdana, sans-serif; /* font family */
+		font-size: 11pt; /* size of the main font in points */
 	}
+
 	img {
 		margin-left: 20px;
 	}
-	hr {
-		margin-left: 30px;
-		margin-top: -4px;
-	}
+
 	nav {
 		margin-top: 20px;
+	}
+
+	h1 {
+		font-size: 24pt;
+		font-family: Georgia, Times, serif;
+		font-weight: normal; /* normal text font */
+		margin-left: 20px;
+		color: #333;
 	}
 </style>

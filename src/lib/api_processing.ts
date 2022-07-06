@@ -15,8 +15,11 @@ let breed: HTMLElement;
 let slideshow: HTMLElement;
 
 export async function startApiProcessing() {
+	// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 	breed = document.getElementById('breed')!;
+	// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 	slideshow = document.getElementById('slideshow')!;
+
 	try {
 		const majorLink = 'https://dog.ceo/api/breeds/list/all';
 		const response = await fetch(majorLink);
