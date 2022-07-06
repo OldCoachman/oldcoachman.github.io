@@ -34,7 +34,9 @@ export async function startApiProcessing() {
 function createBreedList(breedList: Breeds) {
 	const select = document.createElement('select');
 	select.addEventListener('change', () => {
-		loadByBreed(select.value);
+		loadByBreed(select.value).then(() => {
+			console.log(select.value);
+		});
 	});
 
 	select.innerHTML = `
