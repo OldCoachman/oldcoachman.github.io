@@ -1,28 +1,28 @@
 body {
-    font-family: Arial, Verdana, sans-serif; /* font family */
-    font-size: 11pt; /* size of the main font in points */
-    color: #333; /* color of main text */
+	font-family: Arial, Verdana, sans-serif; /* font family */
+	font-size: 11pt; /* size of the main font in points */
+	color: #333; /* color of main text */
 }
 
 h1 {
-    font-size: 24pt;
-    font-family: Georgia, Times, serif;
-    font-weight: normal; /* normal text font */
-    margin-left: 20px;
+	font-size: 24pt;
+	font-family: Georgia, Times, serif;
+	font-weight: normal; /* normal text font */
+	margin-left: 20px;
 }
 
 h2 {
-    color: darkolivegreen;
-    margin-left: 10px
+	color: darkolivegreen;
+	margin-left: 10px;
 }
 
 p {
-    text-align: justify;
-    margin-left: 10px;
-    padding-left: 10px;
-    padding-bottom: 10px;
+	text-align: justify;
+	margin-left: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
 }
 
 a {
-    color: sienna;
+	color: sienna;
 }
