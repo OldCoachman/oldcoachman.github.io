@@ -17,6 +17,10 @@ jobs:
           node-version: '16'
       - name: Run continuous integration
         run: npm ci
+      - name: Format the code
+        run: npm run format
+      - name: Run unit-tests
+        run: npm run test
       - name: Lint
         run: npm run lint
       - name: Build

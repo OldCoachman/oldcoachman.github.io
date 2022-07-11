@@ -10,9 +10,9 @@ test('Biography page has expected h2', async ({ page }) => {
 	expect(await page.textContent('h2')).toBe('Short biography');
 });
 
-test('Projects page has expected h2', async ({ page }) => {
+test('Projects page has expected dt', async ({ page }) => {
 	await page.goto('/Projects');
-	expect(await page.textContent('h2')).toBe('GitHub projects');
+	expect(await page.textContent('dt')).toBe('Design Patterns');
 });
 
 test('Contacts page has expected h2', async ({ page }) => {
