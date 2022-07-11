@@ -19,6 +19,8 @@ jobs:
         run: npm ci
       - name: Format the code
         run: npm run format
+      - name: Prepare tests running
+        run: npx playwright install
       - name: Run unit-tests
         run: npm run test
       - name: Lint
